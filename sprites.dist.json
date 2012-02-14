@@ -1,0 +1,9 @@
+{
+    "demo": {
+        "title": "demo",
+        "style": "background:url('demo.png') transparent;",
+        "class": "",
+        "href": "demo.css",
+        "namespace": ".sprite"
+    }
+}
