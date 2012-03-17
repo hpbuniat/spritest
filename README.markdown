@@ -10,7 +10,7 @@ Using spritest is quite simple - just configure a sprite via **sprites.json** an
 
 **spritest** supports various sprite-setups, but creating a common-class & concrete usage-classes with a common namespace (which will also pass [csslint](https://github.com/stubbornella/csslint)) should be preferred.
 A sample configuration is listed in **sprites.dist.json**, which should look like this:
-![Preview](demo/preview.png)
+![Preview](https://github.com/hpbuniat/spritest/raw/master/demo/preview.png)
 
 Options
 -------
