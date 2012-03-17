@@ -1,5 +1,6 @@
 body {padding: 20px;}
 #nav a{font-family: arial, verdana, sans-serif; font-size: 15px; color: #3B7CD5; text-decoration: none; cursor: pointer; padding: 10px; border: 1px solid #CFD7E4;}
+.title{font-family: arial, verdana, sans-serif; font-size: 12px; text-decoration: none; padding: 2px 0px; margin: 0}
 #nav,
 #container {width: 85%; margin: 0 auto;}
 #spritest div {border: 1px solid #A8AEB8; display: block !important; position: static !important; margin: 5px; float:none !important;}

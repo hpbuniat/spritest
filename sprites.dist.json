@@ -1,9 +1,16 @@
 {
-    "demo": {
-        "title": "demo",
-        "style": "background:url('demo.png') transparent;",
-        "class": "",
-        "href": "demo.css",
-        "namespace": ".sprite"
+    "demo-ns": {
+        "title": "demo with namespace",
+        "href": "demo/demo.css",
+        "classname": "browser",
+        "namespace": ".br",
+        "style": ""
+    },
+    "demo-style": {
+        "title": "demo with style",
+        "href": "demo/demo.css",
+        "classname": "",
+        "namespace": "",
+        "style": "background: url('demo/browsers.png') no-repeat top center; width: 52px; height: 52px; margin: 0 auto;"
     }
 }

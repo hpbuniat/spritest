@@ -1,0 +1,6 @@
+.browser {background: url("browsers.png") no-repeat top center; width: 52px; height: 52px; margin: 0 auto;}
+.br-firefox {background-position: -106px 0; }
+.br-safari {background-position: -51px 0;}
+.br-chrome {background-position: 0 0;}
+.br-opera {background-position: -226px 0;}
+.br-ie {background-position: -166px 0;}
