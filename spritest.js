@@ -31,18 +31,21 @@
          * @returns {Array}
          */
         getClasses: function() {
-            var sheet, rules, decl, i, k, classes = [];
+            var sheet, rules, decl, i, k, classes = [], bFound;
             for (sheet = 0; sheet < document.styleSheets.length; sheet++) {
                 rules = document.styleSheets[sheet].cssRules ? document.styleSheets[sheet].cssRules : document.styleSheets[sheet].rules;
                 for (i = 0; i < rules.length; i++) {
                     decl = rules[i].style;
+                    bFound = false;
                     for (k = 0; k < decl.length; k++) {
                         if (decl[k] === "background-position" && rules[i].style.backgroundPosition.match(/\d/)) {
                             classes.push(rules[i].selectorText);
+                            bFound = true;
                         }
-                        else {
-                            rules[i].style.backgroundPosition = '';
-                        }
+                    }
+
+                    if (bFound === false) {
+                        rules[i].style.backgroundPosition = '';
                     }
                 }
             }
@@ -98,7 +101,7 @@
             });
 
             $('a', nav).click(function() {
-                me.load(jQuery(this).attr('href').substr(1));
+                me.load($(this).attr('href').substr(1));
             });
 
             if (hash !== '' && hash !== '#') {
@@ -115,6 +118,7 @@ $(function() {
         $.spritest.init(d);
     };
 
+    $.ajaxSetup({ cache: false });
     $.getJSON('sprites.json', callback).error(function() {
         $.getJSON('sprites.dist.json', callback);
     });
